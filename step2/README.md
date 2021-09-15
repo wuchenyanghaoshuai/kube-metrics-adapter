@@ -100,3 +100,4 @@ ab -n 1000000 -c 100 http://10.244.2.13/index.html
 
 #压测过程中 kubectl top pods
 #然后get pods的时候 注意查看一下是否进行扩容了
+#https://help.aliyun.com/document_detail/185644.html
