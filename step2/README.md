@@ -10,7 +10,7 @@ kubectl get pods -n kube-system|grep adapter
 kubectl api-versions |grep "autoscaling/v2beta"
 #预计输出
 autoscaling/v2beta
-kubectl get --raw "/apis/external.metrics.k8s.io/v1beta1" | jq .
+kubectl get --raw "/apis/external.metrics.k8s.io/v1beta1" | jq .  (如果这个不出东西报错的话,注意查看/etc/kubernetes/manifests/kube-apiserver.yaml是否开启   - --enable-aggregator-routing=true)
 #预计输出
 {
   "kind": "APIResourceList",
