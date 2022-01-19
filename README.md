@@ -1,5 +1,6 @@
 # kube-metrics-adapter
 使用banzaicloud的kube-metrics-adapter
+https://github.com/banzaicloud/kube-metrics-adapter
 metrics-adapter比较prometheus-adapter区别很大,传统的prometheus-adapter是修改他的configmap配置文件,把语句写进去以后,然后重启该pod才可以生效
 ```
 # kubectl edit cm prometheus-adapter -n kube-system
